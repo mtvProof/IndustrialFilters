@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>Industrial Filters Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Tool</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header-bar">
-    <!-- Rust logo added here; replace "rust-logo.png" with your actual path or URL -->
-    <img src="rust‑logo.png" alt="Rust Logo" class="logo">
-    <h1>
-      Industrial Filter Tool
-      <span class="version">v1.2</span>
-      <span class="author">by mtvProof</span>
-    </h1>
+  <header>
+    <img src="Rust-Logo.jpg" alt="Rust Logo" class="logo">
+<h1>
+  Industrial Tool
+  <span id="version">v2.0</span>
+  <span id="author">by mtvProof</span>
+</h1>
   </header>
 
-  <div class="container">
-    <div class="sidebar">
+  <main>
+    <section id="sortingSystem">
       <h2>Sorting System</h2>
-      <div class="button-grid" id="buttonGrid"></div>
-
-      <div class="locker-section">
-        <h2>Lockers</h2>
-        <div class="button-grid" id="lockerButtons"></div>
-
-        <div class="crafters-section">
-          <h2>Crafters</h2>
-          <div class="button-grid" id="craftersButtons"></div>
-        </div>
+      <div class="tab-buttons">
+        <button onclick="showSortingPage(1)">80 Box Lootroom</button>
+        <button onclick="showSortingPage(2)">X Box Lootroom</button>
       </div>
-    </div>
-  </div>
+      <div id="sortingPage1" class="button-grid"></div>
+      <div id="sortingPage2" class="button-grid hidden"></div>
+    </section>
+
+    <section id="lockers">
+      <h2>Lockers</h2>
+      <div id="lockerButtons" class="button-grid"></div>
+    </section>
+
+    <section id="crafters">
+      <h2>Crafters</h2>
+      <div id="crafterButtons" class="button-grid"></div>
+    </section>
+
+    <section id="diagrams">
+      <h2>Diagrams</h2>
+      <div id="diagramButtons" class="button-grid"></div>
+      <div id="diagramDisplay" class="diagram-flexbox">
+        <img id="diagramImage" src="" alt="Diagram" class="hidden">
+        <div id="diagramSpecialButtons" class="button-grid side-panel"></div>
+        <img id="diagramImage" src="" alt="Diagram" class="hidden">
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

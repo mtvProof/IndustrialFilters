@@ -1,5 +1,215 @@
+function copyToClipboard(text, button) {
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = button.innerHTML;
+    button.innerHTML = '✅ Copied!';
+    button.classList.add('copied');
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      button.classList.remove('copied');
+    }, 1000);
+  }).catch(err => {
+    console.error('Clipboard copy failed', err);
+  });
+}
 
-const buttonData = [
+function showSortingPage(page) {
+  const buttons = document.querySelectorAll('.tab-buttons button');
+  buttons.forEach((btn, idx) => {
+    btn.classList.toggle('active', idx === page - 1);
+  });
+  document.getElementById('sortingPage1').classList.add('hidden');
+  document.getElementById('sortingPage2').classList.add('hidden');
+  document.getElementById(`sortingPage${page}`).classList.remove('hidden');
+}
+
+const sortingButtonsPage1 = [
+  {
+    label: "All Resources",
+    image: "fat.animal.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wood"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.fragments"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "bone.fragments"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "stones"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "hq.metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.refined"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "gunpowder"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "lowgradefuel"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "fat.animal"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "leather"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "cloth"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "diesel_barrel"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "charcoal"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "crude.oil"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "explosives"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "scrap"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "skull.wolf"
+  }
+]
+`
+  },
   {
     label: "Facemasks",
     image: "metal.facemask.png",
@@ -1723,239 +1933,31 @@ const buttonData = [
   }
 ]
 `
-  },
-  {
-    label: "All Resources",
-    image: "fat.animal.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "wood"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metal.fragments"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "bone.fragments"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "stones"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metal.ore"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "hq.metal.ore"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metal.refined"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sulfur"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sulfur.ore"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "gunpowder"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "lowgradefuel"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "fat.animal"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "leather"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "cloth"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "diesel_barrel"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "charcoal"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "crude.oil"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "explosives"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "scrap"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "skull.wolf"
   }
-]
-`
-  },
 ];
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("buttonGrid");
-
-  buttonData.forEach(button => {
-    const btn = document.createElement("button");
-    btn.className = "grid-button";
-    btn.setAttribute("data-message", button.message);
-
-    if (button.image) {
-      const img = document.createElement("img");
-      img.src = button.image;
-      img.alt = `${button.label} Icon`;
-      img.className = "button-icon";
-      // ─── add VIP styling to "All Resources" ───
-if (button.label === "All Resources") {
-  btn.classList.add("vip");
-}
-// (optionally keep "All Components" VIP’d as well)
-if (button.label === "All Components") {
-  btn.classList.add("vip");
-}
-      btn.appendChild(img);
-    }
-
-    btn.appendChild(document.createTextNode(button.label));
-
-    btn.addEventListener("click", () => {
-      if (button.message.trim() !== "") {
-        navigator.clipboard.writeText(button.message).catch(err => {
-          console.error("Clipboard copy failed:", err);
-        });
-      }
-    });
-
-    grid.appendChild(btn);
-  });
-});
-
-const lockerButtonData = [
+const sortingButtonsPage2 = [
   {
-    label: "Slot 1",
-    image: "rifle.ak.png",
+    label: 'Sort B',
+    image: 'sort_b.png',
+    message: `[
+      {
+        "TargetCategory": null,
+        "MaxAmountInOutput": 0,
+        "BufferAmount": 0,
+        "MinAmountInInput": 0,
+        "IsBlueprint": false,
+        "BufferTransferRemaining": 0,
+        "TargetItemName": "coffeecan.helmet"
+      }
+    ]`
+  }
+];
+
+const lockerButtons = [
+  {
+    label: 'AK Set',
+    image: 'rifle.ak.png',
     message: `[
   {
     "TargetCategory": null,
@@ -2047,9 +2049,10 @@ const lockerButtonData = [
     "BufferTransferRemaining": 0,
     "TargetItemName": "syringe.medical"
   }
-]`},
+]`
+  },
   {
-    label: "Slot 2",
+    label: "Tommy Set",
     image: "smg.thompson.png",
     message: `[
   {{
@@ -2090,7 +2093,7 @@ const lockerButtonData = [
   }}
 ]`},
   {
-    label: "Slot 3",
+    label: "Other Items Slot 3",
     image: "jacket.png",
     message: `[
   {{
@@ -2176,8 +2179,8 @@ const lockerButtonData = [
   }}
 ]`}
 ];
-// ─── New “Crafters” button data ───────────────────────────────────────────────
-const craftersButtonData = [
+
+const crafterButtons = [
   {
     label: "Ammo/Meds In",
     image: "cloth.png",
@@ -2254,72 +2257,16 @@ const craftersButtonData = [
 ]`
   }
 ];
-// ────────────────────────────────────────────────────────────────────────────────
 
-// Populate “Crafters” buttons on DOMContentLoaded
-document.addEventListener("DOMContentLoaded", () => {
-  const craftersGrid = document.getElementById("craftersButtons");
-  craftersButtonData.forEach(button => {
-    const btn = document.createElement("button");
-    btn.className = "grid-button";
-
-    // Keep VIP styling if desired (comment out if not needed)
-    if (button.label === "All Resources" || button.label === "All Components") {
-      btn.classList.add("vip");
-    }
-
-    if (button.image) {
-      const img = document.createElement("img");
-      img.src = button.image;
-      img.alt = `${button.label} Icon`;
-      img.className = "button-icon";
-      btn.appendChild(img);
-    }
-
-    btn.appendChild(document.createTextNode(button.label));
-    btn.addEventListener("click", () => {
-      if (button.message.trim() !== "") {
-        navigator.clipboard.writeText(button.message).catch(err => {
-          console.error("Clipboard copy failed:", err);
-        });
-      }
-    });
-    craftersGrid.appendChild(btn);
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const lockerGrid = document.getElementById("lockerButtons");
-  lockerButtonData.forEach(button => {
-    const btn = document.createElement("button");
-    btn.className = "grid-button";
-    if (button.image) {
-      const img = document.createElement("img");
-      img.src = button.image;
-      img.alt = `${button.label} Icon`;
-      img.className = "button-icon";
-      btn.appendChild(img);
-    }
-    btn.appendChild(document.createTextNode(button.label));
-    btn.addEventListener("click", () => {
-      if (button.message.trim() !== "") {
-        navigator.clipboard.writeText(button.message).catch(err => {
-          console.error("Clipboard copy failed:", err);
-        });
-      }
-    });
-    lockerGrid.appendChild(btn);
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("buttonGrid");
-
-  const newButton = {
-    label: "All Components",
-    image: "techparts.png",
-    message: `[
+const diagramButtons = [
+  {
+    label: 'Auto Furnaces',
+    image: 'electric.furnace.png',
+    fullImage: 'AutoSmelterv4.gif',
+    buttons: [
+      {
+        label: 'Conveyor1',
+        message: `[
   {
     "TargetCategory": null,
     "MaxAmountInOutput": 0,
@@ -2327,7 +2274,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "propanetank"
+    "TargetItemName": "metal.fragments"
   },
   {
     "TargetCategory": null,
@@ -2336,7 +2283,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "gears"
+    "TargetItemName": "charcoal"
   },
   {
     "TargetCategory": null,
@@ -2345,7 +2292,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalblade"
+    "TargetItemName": "sulfur"
   },
   {
     "TargetCategory": null,
@@ -2354,7 +2301,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalpipe"
+    "TargetItemName": "metal.refined"
   },
   {
     "TargetCategory": null,
@@ -2363,129 +2310,153 @@ document.addEventListener("DOMContentLoaded", () => {
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalspring"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "smgbody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "semibody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "riflebody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sewingkit"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "rope"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "tarp"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "roadsigns"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "techparts"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "cctv.camera"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "targeting.computer"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sheetmetal"
+    "TargetItemName": "lowgradefuel"
   }
 ]`
-  };
-
-  const btn = document.createElement("button");
-  btn.className = "grid-button";
-  if (newButton.image) {
-    const img = document.createElement("img");
-    img.src = newButton.image;
-    img.alt = `${newButton.label} Icon`;
-    img.className = "button-icon";
-    btn.appendChild(img);
+      },
+      {
+        label: 'Conveyor2',
+        message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "hq.metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "crude.oil"
   }
-  btn.appendChild(document.createTextNode(newButton.label));
-  btn.addEventListener("click", () => {
-    navigator.clipboard.writeText(newButton.message).catch(err => {
-      console.error("Clipboard copy failed:", err);
-    });
-  });
-  grid.appendChild(btn);
-});
+]`
+      },
+      {
+        label: 'Conveyor3',
+        message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 20,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wood"
+  }
+]`
+      },
+      {
+        label: 'Conveyor4',
+        message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 11,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 22,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 6,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "hq.metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 10,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "crude.oil"
+  }
+]`
+      }
+    ]
+  }/*,
+  {
+    label: 'Image 2',
+    image: 'diagram2.png',
+    fullImage: 'big_diagram2.png',
+    buttons: [
+      {
+        label: 'Battery Config',
+        message: `[
+  { "TargetCategory": null, "MaxAmountInOutput": 0, "BufferAmount": 0, "MinAmountInInput": 0, "IsBlueprint": false, "BufferTransferRemaining": 0, "TargetItemName": "battery.small" }
+]`
+      }
+    ]
+  }*/
+];
 
-document.addEventListener("DOMContentLoaded", () => {
-  const vipBtn = [...document.querySelectorAll(".grid-button")].find(el => el.textContent === "All Components");
-  if (vipBtn) vipBtn.classList.add("vip");
-});
+function createButtons(containerId, buttons, action) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  buttons.forEach(btn => {
+    const button = document.createElement('button');
+    button.innerHTML = btn.image ? `<img src="${btn.image}" alt=""> ${btn.label}` : btn.label;
+    button.onclick = () => action(btn, button);
+    container.appendChild(button);
+  });
+}
+
+createButtons('sortingPage1', sortingButtonsPage1, (btn, el) => copyToClipboard(btn.message, el));
+createButtons('sortingPage2', sortingButtonsPage2, (btn, el) => copyToClipboard(btn.message, el));
+createButtons('lockerButtons', lockerButtons, (btn, el) => copyToClipboard(btn.message, el));
+createButtons('crafterButtons', crafterButtons, (btn, el) => copyToClipboard(btn.message, el));
+
+function showDiagramAndButtons(diagram) {
+  const img = document.getElementById('diagramImage');
+  img.src = diagram.fullImage;
+  img.classList.remove('hidden');
+
+  const container = document.getElementById('diagramSpecialButtons');
+  container.innerHTML = '';
+  diagram.buttons.forEach(btn => {
+    const button = document.createElement('button');
+    button.textContent = btn.label;
+    button.onclick = () => copyToClipboard(btn.message, button);
+    container.appendChild(button);
+  });
+}
+
+createButtons('diagramButtons', diagramButtons, (btn) => showDiagramAndButtons(btn));
+showSortingPage(1);
