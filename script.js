@@ -3594,7 +3594,7 @@ const lockerButtons = [
     label: "Tommy Set",
     image: "smg.thompson.png",
     message: `[
-  {{
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3602,8 +3602,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "hazmatsuit"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3611,8 +3611,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "smg.thompson"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 128,
     "BufferAmount": 0,
@@ -3620,8 +3620,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "ammo.pistol"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 8,
     "BufferAmount": 0,
@@ -3629,13 +3629,13 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "syringe.medical"
-  }}
+  }
 ]`},
   {
     label: "Other Items Slot 3",
     image: "jacket.png",
     message: `[
-  {{
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3643,8 +3643,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "smg.mp5"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3652,8 +3652,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "rifle.semiauto"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3661,8 +3661,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "coffeecan.helmet"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3670,8 +3670,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "roadsign.jacket"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3679,8 +3679,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "jacket"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3688,8 +3688,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "burlap.gloves"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3697,8 +3697,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "roadsign.gloves"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 3,
     "BufferAmount": 0,
@@ -3706,8 +3706,8 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "barricade.wood.cover"
-  }},
-  {{
+  },
+  {
     "TargetCategory": null,
     "MaxAmountInOutput": 1,
     "BufferAmount": 0,
@@ -3715,11 +3715,89 @@ const lockerButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "rifle.sks"
-  }}
+  }
 ]`}
 ];
 
 const crafterButtons = [
+  {
+    label: "Under Workbench",
+    image: "workbench3.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.fragments"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 500,
+    "BufferAmount": 0,
+    "MinAmountInInput": 500,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "lowgradefuel"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 500,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "cloth"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "gunpowder"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "scrap"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 100,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.refined"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "stones"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wood"
+  }
+]`
+  },
   {
     label: "Ammo/Meds In",
     image: "cloth.png",
