@@ -644,7 +644,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "propanetank"
+    "TargetItemName": "bandage"
   },
   {
     "TargetCategory": null,
@@ -653,7 +653,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "gears"
+    "TargetItemName": "syringe.medical"
   },
   {
     "TargetCategory": null,
@@ -662,124 +662,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalblade"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metalpipe"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metalspring"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "smgbody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "semibody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "riflebody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sewingkit"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "rope"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "tarp"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "roadsigns"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "techparts"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "cctv.camera"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "targeting.computer"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sheetmetal"
+    "TargetItemName": "largemedkit"
   }
 ]`
   },
@@ -1007,7 +890,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "propanetank"
+    "TargetItemName": "fish.raw"
   },
   {
     "TargetCategory": null,
@@ -1016,7 +899,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "gears"
+    "TargetItemName": "meat.boar"
   },
   {
     "TargetCategory": null,
@@ -1025,7 +908,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalblade"
+    "TargetItemName": "bearmeat"
   },
   {
     "TargetCategory": null,
@@ -1034,7 +917,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalpipe"
+    "TargetItemName": "deermeat.raw"
   },
   {
     "TargetCategory": null,
@@ -1043,7 +926,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "metalspring"
+    "TargetItemName": "wolfmeat.raw"
   },
   {
     "TargetCategory": null,
@@ -1052,7 +935,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "smgbody"
+    "TargetItemName": "chicken.raw"
   },
   {
     "TargetCategory": null,
@@ -1061,7 +944,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "semibody"
+    "TargetItemName": "egg"
   },
   {
     "TargetCategory": null,
@@ -1070,7 +953,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "riflebody"
+    "TargetItemName": "fish.cooked"
   },
   {
     "TargetCategory": null,
@@ -1079,7 +962,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "sewingkit"
+    "TargetItemName": "meat.pork.cooked"
   },
   {
     "TargetCategory": null,
@@ -1088,7 +971,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "rope"
+    "TargetItemName": "chicken.cooked"
   },
   {
     "TargetCategory": null,
@@ -1097,7 +980,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "tarp"
+    "TargetItemName": "deermeat.cooked"
   },
   {
     "TargetCategory": null,
@@ -1106,7 +989,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "roadsigns"
+    "TargetItemName": "wolfmeat.cooked"
   },
   {
     "TargetCategory": null,
@@ -1115,7 +998,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "techparts"
+    "TargetItemName": "bearmeat.cooked"
   },
   {
     "TargetCategory": null,
@@ -1124,7 +1007,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "cctv.camera"
+    "TargetItemName": "corn"
   },
   {
     "TargetCategory": null,
@@ -1133,7 +1016,7 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "targeting.computer"
+    "TargetItemName": "pumpkin"
   },
   {
     "TargetCategory": null,
@@ -1142,7 +1025,106 @@ const sortingButtonsPage1 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "sheetmetal"
+    "TargetItemName": "wheat"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "oretea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "woodtea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "scraptea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "purecoolingtea"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "purewarmingtea"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "healingtea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "pureharvestingtea"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "maxhealthtea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "radiationresisttea.pure"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "purecraftingtea_quality"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "mushroom"
   }
 ]`
   },
@@ -1573,18 +1555,9 @@ const sortingButtonsPage1 = [
 ]`
   },
   {
-    label: "Food & Seeds",
+    label: "Seeds",
     image: "seed.hemp.png",
     message: `[
-  {
-    "TargetCategory": 7,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": ""
-  },
   {
     "TargetCategory": null,
     "MaxAmountInOutput": 0,
@@ -1665,6 +1638,15 @@ const sortingButtonsPage1 = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "seed.blue.berry"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "seed.wheat"
   }
 ]`
   },
@@ -1949,18 +1931,8 @@ const sortingButtonsPage2 = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "hoodie"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "pants"
   }
-]
-`
+]`
   },
   {
     label: "Pants",
@@ -3223,7 +3195,7 @@ const sortingButtonsPage2 = [
 `
   },
   {
-    label: "Pipes",
+    label: "Comps 1",
     image: "metalpipe.png",
     message: `[
   {
@@ -3284,7 +3256,136 @@ const sortingButtonsPage2 = [
 `
   },
   {
-    label: "Rockets",
+    label: "Comps 2",
+    image: "sewingkit.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sewingkit"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "rope"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "tarp"
+  }
+]
+`
+  },
+  {
+    label: "Comps 3",
+    image: "roadsigns.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sheetmetal"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "propanetank"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metalblade"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "roadsigns"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "fuse"
+  }
+]
+`
+  },
+  {
+    label: "Comps 4",
+    image: "riflebody.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "smgbody"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "semibody"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "riflebody"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metalspring"
+  }
+]
+`
+  },
+  {
+    label: "Boom",
     image: "ammo.rocket.basic.png",
     message: `[
   {
@@ -3358,135 +3459,6 @@ const sortingButtonsPage2 = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "ammo.rifle.explosive"
-  }
-]
-`
-  },
-  {
-    label: "Sewing Kits",
-    image: "sewingkit.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sewingkit"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "rope"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "tarp"
-  }
-]
-`
-  },
-  {
-    label: "RoadSigns",
-    image: "roadsigns.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "sheetmetal"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "propanetank"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metalblade"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "roadsigns"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "fuse"
-  }
-]
-`
-  },
-  {
-    label: "Bodies",
-    image: "riflebody.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "smgbody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "semibody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "riflebody"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "metalspring"
   }
 ]
 `
@@ -3795,6 +3767,156 @@ const crafterButtons = [
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "wood"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "leather"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 10,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sewingkit"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 10,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "techparts"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 10,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "roadsigns"
+  }
+]`
+  },
+  {
+    label: "Seal Boxes",
+    image: "hammer.png",
+    message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 4000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wood"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 4000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "stones"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 2000,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.fragments"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "building.planner"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "hammer"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 1,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wiretool"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 64,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "ammo.rifle"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 2,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "syringe.medical"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 64,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "ammo.pistol"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 100,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "cloth"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 3,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "grenade.f1"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 2,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "grenade.smoke"
   }
 ]`
   },
@@ -3806,7 +3928,7 @@ const crafterButtons = [
     "TargetCategory": null,
     "MaxAmountInOutput": 200,
     "BufferAmount": 0,
-    "MinAmountInInput": 500,
+    "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "metal.fragments"
@@ -3815,7 +3937,7 @@ const crafterButtons = [
     "TargetCategory": null,
     "MaxAmountInOutput": 200,
     "BufferAmount": 0,
-    "MinAmountInInput": 500,
+    "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "lowgradefuel"
@@ -3824,7 +3946,7 @@ const crafterButtons = [
     "TargetCategory": null,
     "MaxAmountInOutput": 200,
     "BufferAmount": 0,
-    "MinAmountInInput": 500,
+    "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "cloth"
@@ -3833,10 +3955,19 @@ const crafterButtons = [
     "TargetCategory": null,
     "MaxAmountInOutput": 200,
     "BufferAmount": 0,
-    "MinAmountInInput": 500,
+    "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
     "TargetItemName": "gunpowder"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 500,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "wood"
   }
 ]`
   },
@@ -3878,7 +4009,7 @@ const crafterButtons = [
 const diagramButtons = [
   {
     label: 'Auto Furnaces',
-    image: 'electric.furnace.png',
+    image: 'furnace.large.png',
     fullImage: 'AutoSmelterv4.gif',
     buttons: [
       {
@@ -4028,20 +4159,87 @@ const diagramButtons = [
 ]`
       }
     ]
-  }/*,
+  },
   {
-    label: 'Image 2',
-    image: 'diagram2.png',
-    fullImage: 'big_diagram2.png',
+    label: 'Electric Furnaces',
+    image: 'electric.furnace.png',
+    fullImage: 'electricfurnaces.gif',
     buttons: [
       {
-        label: 'Battery Config',
+        label: 'Conveyor1',
         message: `[
-  { "TargetCategory": null, "MaxAmountInOutput": 0, "BufferAmount": 0, "MinAmountInInput": 0, "IsBlueprint": false, "BufferTransferRemaining": 0, "TargetItemName": "battery.small" }
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 20,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 30,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur.ore"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 10,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "hq.metal.ore"
+  }
+]`
+      },
+      {
+        label: 'Conveyor2',
+        message: `[
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.fragments"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "charcoal"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "sulfur"
+  },
+  {
+    "TargetCategory": null,
+    "MaxAmountInOutput": 0,
+    "BufferAmount": 0,
+    "MinAmountInInput": 0,
+    "IsBlueprint": false,
+    "BufferTransferRemaining": 0,
+    "TargetItemName": "metal.refined"
+  }
 ]`
       }
     ]
-  }*/
+  }
 ];
 
 function createButtons(containerId, buttons, action) {
