@@ -16,7 +16,17 @@
 </h1>
   </header>
 
+  <nav class="top-nav">
+    <div class="nav-buttons">
+      <button id="navIndustrial" onclick="showPage('industrial')">Industrial</button>
+      <button id="navElectrical" onclick="showPage('electrical')">Electrical</button>
+      <button id="navArtwork" onclick="showPage('artwork')">Artwork</button>
+    </div>
+  </nav>
+
   <main>
+    <!-- INDUSTRIAL page (existing content) -->
+    <div id="industrialPage" class="page">
     <section id="sortingSystem">
       <h2>Sorting System</h2>
       <div class="tab-buttons">
@@ -47,6 +57,30 @@
         <div id="diagramSpecialButtons" class="button-grid side-panel"></div>
       </div>
     </section>
+    </div>
+
+    <!-- ELECTRICAL page (new) -->
+    <div id="electricalPage" class="page hidden">
+      <section id="electrical">
+        <h2>Electrical</h2>
+        <div id="electricalButtons" class="button-grid"></div>
+        <div id="electricalDisplay" class="diagram-flexbox hidden">
+          <img id="electricalImage" src="" alt="Electrical Diagram" class="hidden">
+          <!-- iframe fallback for embedding external pages (e.g., rustrician) -->
+          <iframe id="electricalFrame" class="hidden" src="" title="Electrical Embed" sandbox="allow-scripts allow-same-origin"></iframe>
+          <!-- side panel for buttons (keeps layout consistent with diagrams) -->
+          <div id="electricalSpecialButtons" class="button-grid side-panel"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ARTWORK page (new) -->
+    <div id="artworkPage" class="page hidden">
+      <section id="artwork">
+        <h2>Artwork</h2>
+        <div id="artworkGallery" class="button-grid"></div>
+      </section>
+    </div>
   </main>
 
   <script src="script.js"></script>

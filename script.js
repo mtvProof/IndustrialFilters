@@ -5240,263 +5240,6 @@ const sortingButtonsPage3 = [
     "MinAmountInInput": 0,
     "IsBlueprint": false,
     "BufferTransferRemaining": 0,
-    "TargetItemName": "weapon.mod.gascompressionovedrive"
-  }
-]
-`
-  },
-  {
-    label: "Cards",
-    image: "keycard_red.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "keycard_red"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "keycard_blue"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "keycard_green"
-  }
-]
-`
-  },
-  {
-    label: "Pistol",
-    image: "ammo.pistol.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.pistol"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.pistol.hv"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.pistol.fire"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.shotgun"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.shotgun.fire"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.shotgun.slug"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.handmade.shell"
-  }
-]
-`
-  },
-  {
-    label: "5.5",
-    image: "ammo.rifle.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.rifle"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.rifle.hv"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.rifle.explosive"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "ammo.rifle.incendiary"
-  }
-]
-`
-  },
-  {
-    label: "Medstick",
-    image: "syringe.medical.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "syringe.medical"
-  }
-]
-`
-  },
-  {
-    label: "Medkit",
-    image: "largemedkit.png",
-    message: `[
-  {
-    "TargetCategory": 6,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": ""
-  }
-]
-`
-  },
-  {
-    label: "Cloth",
-    image: "cloth.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "cloth"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "leather"
-  }
-]
-`
-  },
-  {
-    label: "Low Grade",
-    image: "lowgradefuel.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "diesel_barrel"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 21000,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "lowgradefuel"
-  },
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "fat.animal"
-  }
-]
-`
-  },
-  {
-    label: "Gun Powder",
-    image: "gunpowder.png",
-    message: `[
-  {
-    "TargetCategory": null,
-    "MaxAmountInOutput": 0,
-    "BufferAmount": 0,
-    "MinAmountInInput": 0,
-    "IsBlueprint": false,
-    "BufferTransferRemaining": 0,
-    "TargetItemName": "gunpowder"
-  },
-  {
     "TargetCategory": null,
     "MaxAmountInOutput": 0,
     "BufferAmount": 0,
@@ -6684,5 +6427,153 @@ function showDiagramAndButtons(diagram) {
   });
 }
 
+// ------------------ NEW: page switching ------------------
+function showPage(pageId) {
+  const pages = ['industrial', 'electrical', 'artwork'];
+  pages.forEach(p => {
+    const el = document.getElementById(p + 'Page');
+    if (!el) return;
+    if (p === pageId) el.classList.remove('hidden');
+    else el.classList.add('hidden');
+  });
+
+  // update nav button active state
+  document.querySelectorAll('.nav-buttons button').forEach(btn => {
+    btn.classList.toggle('active', btn.id === `nav${pageId.charAt(0).toUpperCase()}${pageId.slice(1)}`);
+  });
+
+  // Cleanup: hide/clear any diagram/electrical display areas to avoid leftover empty boxes
+  const cleanupIds = [
+    'diagramDisplay', 'diagramImage', 'diagramSpecialButtons',
+    'electricalDisplay', 'electricalImage', 'electricalFrame', 'electricalSpecialButtons'
+  ];
+  cleanupIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    // Prefer using inline display toggles to guarantee elements don't occupy layout space
+    try {
+      // hide containers explicitly
+      if (id === 'diagramDisplay' || id === 'electricalDisplay' || id === 'diagramSpecialButtons' || id === 'electricalSpecialButtons') {
+        el.style.display = 'none';
+      }
+      // clear src for images/iframes so empty frames don't render
+      if (el.tagName === 'IMG' || el.tagName === 'IFRAME') {
+        el.style.display = 'none';
+        el.src = '';
+      }
+    } catch (e) {
+      // fall back to class-based hiding
+      el.classList.add('hidden');
+    }
+    // clear any side-panel buttons
+    if (el.classList.contains('side-panel') || el.id.endsWith('Buttons')) {
+      el.innerHTML = '';
+    }
+  });
+}
+
+// ------------------ Electrical page wiring ------------------
+// Single, explicit electrical entry requested by user. Thumbnail and display use the provided GIF URL.
+const electricalButtons = [
+  {
+    label: 'Electrical Wall',
+    image: 'https://i.ibb.co/x82JTfDV/Untitled.gif',
+    fullImage: 'https://i.ibb.co/x82JTfDV/Untitled.gif',
+    link: 'https://www.rustrician.io/?circuit=beb2fdb954bda6a376005dbbb9f4dfc0'
+  }
+];
+// Add SAMs circuit as requested
+electricalButtons.push({
+  label: 'SAMs',
+  image: 'https://i.ibb.co/0jcyHJLm/sams.gif',
+  fullImage: 'https://i.ibb.co/0jcyHJLm/sams.gif',
+  link: 'https://www.rustrician.io/?circuit=1002d7226638ce6d3a29a00011cc2653'
+});
+
+// Add Rig Alarms circuit with additional copy buttons
+electricalButtons.push({
+  label: 'Rig Alarms',
+  image: 'https://i.ibb.co/0pgM8jyD/654645.gif',
+  fullImage: 'https://i.ibb.co/0pgM8jyD/654645.gif',
+  link: 'https://www.rustrician.io/?circuit=cf43e730185258517c28297ee4946f2a',
+  codes: [
+    { name: 'Small', code: '4765' },
+    { name: 'Large', code: '4768' },
+    { name: 'Excav', code: '4777' }
+  ]
+});
+
+function showElectricalImage(btn) {
+  const imgEl = document.getElementById('electricalImage');
+  const frameEl = document.getElementById('electricalFrame');
+  const displayEl = document.getElementById('electricalDisplay');
+  const specialContainer = document.getElementById('electricalSpecialButtons');
+  // clear any previous buttons in the special panel
+  if (specialContainer) specialContainer.innerHTML = '';
+
+  // Hide iframe (we'll display the provided GIF image)
+  const full = btn.fullImage || btn.link || '';
+  if (frameEl) {
+    frameEl.src = '';
+    frameEl.style.display = 'none';
+  }
+
+  if (imgEl) {
+    imgEl.src = full;
+    imgEl.style.display = 'block';
+  }
+
+  // Ensure the display area is visible (it was hidden before any selection)
+  if (displayEl) displayEl.style.display = 'flex';
+  if (specialContainer) specialContainer.style.display = 'flex';
+
+  // Create a simple 'Link' button and place it in the side-panel so it lines up with the image
+  const linkBtn = document.createElement('button');
+  linkBtn.id = 'electricalOpenLink';
+  linkBtn.textContent = 'Link';
+  linkBtn.onclick = () => { try { window.open(btn.link || full, '_blank'); } catch (e) { console.warn('Unable to open link', e); } };
+  if (specialContainer) specialContainer.appendChild(linkBtn);
+
+  // If the entry provides codes, create individual buttons that copy the code to clipboard
+  if (specialContainer && Array.isArray(btn.codes)) {
+    btn.codes.forEach(c => {
+      const cbtn = document.createElement('button');
+      cbtn.textContent = c.name;
+      cbtn.onclick = () => copyToClipboard(c.code, cbtn);
+      specialContainer.appendChild(cbtn);
+    });
+  }
+}
+
+// ------------------ NEW: Artwork gallery wiring ------------------
+function addArtworkItem(src, alt, title) {
+  const gallery = document.getElementById('artworkGallery');
+  const wrapper = document.createElement('div');
+  wrapper.className = 'art-item';
+  if (title) {
+    const caption = document.createElement('div');
+    caption.className = 'art-title';
+    caption.textContent = title;
+    wrapper.appendChild(caption);
+  }
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt || '';
+  const btn = document.createElement('button');
+  btn.textContent = 'Copy Link';
+  btn.onclick = () => copyToClipboard(src, btn);
+  wrapper.appendChild(img);
+  wrapper.appendChild(btn);
+  gallery.appendChild(wrapper);
+}
+
+
 createButtons('diagramButtons', diagramButtons, (btn) => showDiagramAndButtons(btn));
 showSortingPage(1);
+// initialize new pages and content
+createButtons('electricalButtons', electricalButtons, (btn, el) => showElectricalImage(btn));
+// Artwork items provided by user
+addArtworkItem('https://i.ibb.co/5X52mLC7/Chat-GPT-Image-Oct-24-2025-10-23-03-PM.png', 'Rig Timers image', 'Rig Timers');
+addArtworkItem('https://i.ibb.co/1tF7DVY0/Chat-GPT-Image-Oct-23-2025-11-04-05-PM.png', 'Farm Timers image', 'Farm Timers');
+// default to Industrial page on load
+showPage('industrial');
