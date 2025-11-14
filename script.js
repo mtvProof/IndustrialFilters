@@ -6645,7 +6645,15 @@ function createButtons(containerId, buttons, action) {
   container.innerHTML = '';
   buttons.forEach(btn => {
     const button = document.createElement('button');
-    button.innerHTML = btn.image ? `<img src="${btn.image}" alt=""> ${btn.label}` : btn.label;
+    // Normalize image paths: default thumbnails live in `images/`, unless a full path is provided
+    if (btn.image) {
+      const imgSrc = (btn.image.startsWith('images/') || btn.image.startsWith('circuits/') || btn.image.startsWith('http'))
+        ? btn.image
+        : `images/${btn.image}`;
+      button.innerHTML = `<img src="${imgSrc}" alt=""> ${btn.label}`;
+    } else {
+      button.innerHTML = btn.label;
+    }
     button.onclick = () => action(btn, button);
     container.appendChild(button);
   });
@@ -6659,7 +6667,11 @@ createButtons('crafterButtons', crafterButtons, (btn, el) => copyToClipboard(btn
 
 function showDiagramAndButtons(diagram) {
   const img = document.getElementById('diagramImage');
-  img.src = diagram.fullImage;
+  // Diagram full images (schematics) live in `circuits/` by default unless a full path is provided
+  const fullSrc = (diagram.fullImage && (diagram.fullImage.startsWith('circuits/') || diagram.fullImage.startsWith('http')))
+    ? diagram.fullImage
+    : (diagram.fullImage ? `circuits/${diagram.fullImage}` : '');
+  img.src = fullSrc;
   img.classList.remove('hidden');
 
   const container = document.getElementById('diagramSpecialButtons');
