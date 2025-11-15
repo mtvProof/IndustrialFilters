@@ -21,6 +21,7 @@
       <button id="navIndustrial" onclick="showPage('industrial')">Industrial</button>
       <button id="navElectrical" onclick="showPage('electrical')">Electrical</button>
       <button id="navArtwork" onclick="showPage('artwork')">Artwork</button>
+      <button id="navToolcupboard" onclick="showPage('toolcupboard')">Tool Cupboard</button>
     </div>
   </nav>
 
@@ -79,6 +80,41 @@
       <section id="artwork">
         <h2>Artwork</h2>
         <div id="artworkGallery" class="button-grid"></div>
+      </section>
+    </div>
+
+    <!-- TOOL CUPBOARD page -->
+    <div id="toolcupboardPage" class="page hidden">
+      <section id="toolcupboard">
+        <div class="tc-header">
+          <img id="tcBanner" src="images/cupboardtool.png" alt="Tool Cupboard" onerror="this.style.display='none'">
+          <h2>Tool Cupboard Calculator</h2>
+          <div class="tc-sub">Duration fixed to <strong>24 hours</strong></div>
+        </div>
+        <p>Enter your upkeep rates (per minute). The calculator uses a fixed 24-hour duration and computes total resources needed.</p>
+        <div class="calc-grid">
+          <label>
+            <img class="tc-icon" src="images/wood.png" alt="Wood" onerror="this.style.display='none'">Wood (per minute)
+            <input id="tcWood" type="number" min="0" step="any" placeholder="e.g. 5">
+          </label>
+          <label>
+            <img class="tc-icon" src="images/stones.png" alt="Stone" onerror="this.style.display='none'">Stone (per minute)
+            <input id="tcStone" type="number" min="0" step="any" placeholder="e.g. 0">
+          </label>
+          <label>
+            <img class="tc-icon" src="images/metalfragments.png" alt="Fragments" onerror="this.style.display='none'">Metal Fragments (per minute)
+            <input id="tcFrags" type="number" min="0" step="any" placeholder="e.g. 2">
+          </label>
+          <label>
+            <img class="tc-icon" src="images/metalrefined.png" alt="HQM" onerror="this.style.display='none'">HQM (per minute)
+            <input id="tcHqm" type="number" min="0" step="any" placeholder="e.g. 0">
+          </label>
+        </div>
+        <div style="margin-top:12px; display:flex; gap:8px;">
+          <button id="tcCalculate">Calculate</button>
+          <button id="tcCopyAll">Copy All</button>
+        </div>
+        <div id="tcResults" class="tc-results"></div>
       </section>
     </div>
   </main>

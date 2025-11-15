@@ -101,6 +101,115 @@ h2 {
   color: #fff;
 }
 
+/* Tool Cupboard calculator styles */
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.calc-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #ddd;
+}
+.calc-grid input {
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #0f0f0f;
+  color: #fff;
+}
+.tc-results {
+  margin-top: 14px;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0f0f0f;
+}
+.tc-results .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.tc-results .value {
+  font-weight: bold;
+  color: #fff;
+}
+.slots-sub {
+  font-size: 12px;
+  color: #bbb;
+}
+.tc-summary {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #ddd;
+}
+.tc-results hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 10px 0;
+}
+
+/* Tool Cupboard visuals */
+.tc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tc-header img#tcBanner {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #0b0b0b;
+}
+.tc-header h2 { margin: 0; }
+.tc-header .tc-sub { color: #bbb; font-size: 13px; }
+.tc-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.calc-grid label {
+  display: flex;
+  align-items: center;
+}
+.calc-grid input {
+  padding: 10px;
+  margin-left: 8px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #0f0f0f;
+  color: #fff;
+  flex: 1 1 auto;
+}
+/* Center and enlarge the Tool Cupboard page */
+#toolcupboardPage section#toolcupboard {
+  max-width: 1000px;
+  margin: 18px auto;
+  padding: 18px;
+  transform: scale(1.02);
+}
+#toolcupboardPage .tc-header { justify-content: center; }
+#toolcupboardPage .calc-grid { margin-top: 16px; }
+button#tcCalculate, button#tcCopyAll {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button#tcCalculate:hover, button#tcCopyAll:hover { background-color: #3b3b3b; }
+
 /* Electrical iframe styling */
 #electricalFrame {
   /* Make the embedded preview square and large while remaining responsive */
