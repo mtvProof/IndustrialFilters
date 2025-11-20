@@ -287,3 +287,29 @@ button.copied {
   color: #888;
   margin-left: 10px;
 }
+/* Locked page monitor styles */
+.monitor-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.monitor-section h3 {
+  color: #ffa500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.monitor-display {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  min-height: 60px;
+}
+
+.monitor-display p {
+  margin: 5px 0;
+}

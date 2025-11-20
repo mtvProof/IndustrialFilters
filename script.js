@@ -6429,7 +6429,7 @@ function showDiagramAndButtons(diagram) {
 
 // ------------------ NEW: page switching ------------------
 function showPage(pageId) {
-  const pages = ['industrial', 'electrical', 'artwork', 'toolcupboard'];
+  const pages = ['industrial', 'electrical', 'artwork', 'toolcupboard', 'locked'];
   pages.forEach(p => {
     const el = document.getElementById(p + 'Page');
     if (!el) return;
@@ -6663,4 +6663,22 @@ function calculateToolCupboardAllocate() {
 // wire inputs and buttons to autosave/calc
 ['tcWood','tcStone','tcFrags','tcHqm'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('input', () => calculateToolCupboardAllocate()); });
 const calcBtn = document.getElementById('tcCalculate'); if (calcBtn) calcBtn.addEventListener('click', calculateToolCupboardAllocate);
-const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());
+const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());
+
+// ------------------ Locked page password verification ------------------
+let isLockedPageUnlocked = false;
+
+function showLockedPage() {
+  if (isLockedPageUnlocked) {
+    showPage('locked');
+    return;
+  }
+  
+  const code = prompt('Enter access code:');
+  if (code === '2222') {
+    isLockedPageUnlocked = true;
+    showPage('locked');
+  } else if (code !== null) {
+    alert('Incorrect code. Access denied.');
+  }
+}

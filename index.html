@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industrial Tool</title>
+  <title>RATS Homepage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
   <img src="images/rust-logo.jpg" alt="Rust Logo" class="logo">
 <h1>
-  Industrial Tool
+  RATS Homepage
   <span id="version">v2.5</span>
   <span id="author">by mtvProof</span>
 </h1>
@@ -22,6 +22,7 @@
       <button id="navElectrical" onclick="showPage('electrical')">Electrical</button>
       <button id="navArtwork" onclick="showPage('artwork')">Artwork</button>
       <button id="navToolcupboard" onclick="showPage('toolcupboard')">Tool Cupboard</button>
+      <button id="navLocked" onclick="showLockedPage()">Locked</button>
     </div>
   </nav>
 
@@ -115,6 +116,42 @@
           <button id="tcCopyAll">Copy All</button>
         </div>
         <div id="tcResults" class="tc-results"></div>
+      </section>
+    </div>
+
+    <!-- LOCKED page (password protected) -->
+    <div id="lockedPage" class="page hidden">
+      <section id="locked">
+        <h2>🔒 Pi Resource Monitor</h2>
+        <p>Personal system monitoring and diagnostics for Raspberry Pi</p>
+        
+        <div class="monitor-section">
+          <h3>CPU & Memory</h3>
+          <div id="cpuMonitor" class="monitor-display">
+            <p>Loading system stats...</p>
+          </div>
+        </div>
+        
+        <div class="monitor-section">
+          <h3>Disk Usage</h3>
+          <div id="diskMonitor" class="monitor-display">
+            <p>Loading disk stats...</p>
+          </div>
+        </div>
+        
+        <div class="monitor-section">
+          <h3>Temperature</h3>
+          <div id="tempMonitor" class="monitor-display">
+            <p>Loading temperature...</p>
+          </div>
+        </div>
+        
+        <div class="monitor-section">
+          <h3>Network</h3>
+          <div id="networkMonitor" class="monitor-display">
+            <p>Loading network info...</p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
