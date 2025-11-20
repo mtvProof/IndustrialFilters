@@ -6669,16 +6669,46 @@ const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEv
 let isLockedPageUnlocked = false;
 
 function showLockedPage() {
-  if (isLockedPageUnlocked) {
-    showPage('locked');
-    return;
+  showPage('locked');
+  if (!isLockedPageUnlocked) {
+    // Show password section, hide monitor content
+    document.getElementById('passwordSection').classList.remove('hidden');
+    document.getElementById('monitorContent').classList.add('hidden');
+  } else {
+    // Show monitor content, hide password section
+    document.getElementById('passwordSection').classList.add('hidden');
+    document.getElementById('monitorContent').classList.remove('hidden');
   }
-  
-  const code = prompt('Enter access code:');
-  if (code === '2222') {
-    isLockedPageUnlocked = true;
-    showPage('locked');
-  } else if (code !== null) {
-    alert('Incorrect code. Access denied.');
-  }
+}
+
+// Handle unlock button
+const unlockBtn = document.getElementById('unlockButton');
+if (unlockBtn) {
+  unlockBtn.addEventListener('click', () => {
+    const input = document.getElementById('passwordInput');
+    const error = document.getElementById('passwordError');
+    const code = input.value;
+    
+    if (code === '2222') {
+      isLockedPageUnlocked = true;
+      document.getElementById('passwordSection').classList.add('hidden');
+      document.getElementById('monitorContent').classList.remove('hidden');
+      input.value = '';
+      error.classList.add('hidden');
+    } else {
+      error.classList.remove('hidden');
+      input.value = '';
+      setTimeout(() => error.classList.add('hidden'), 3000);
+    }
+  });
+}
+
+// Allow Enter key to submit password
+const pwInput = document.getElementById('passwordInput');
+if (pwInput) {
+  pwInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      document.getElementById('unlockButton').click();
+    }
+  });
 }

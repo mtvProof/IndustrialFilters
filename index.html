@@ -125,6 +125,16 @@
         <h2>🔒 Pi Resource Monitor</h2>
         <p>Personal system monitoring and diagnostics for Raspberry Pi</p>
         
+        <!-- Password input section -->
+        <div id="passwordSection" class="password-section">
+          <label for="passwordInput">Enter Access Code:</label>
+          <input type="password" id="passwordInput" placeholder="****">
+          <button id="unlockButton">Unlock</button>
+          <div id="passwordError" class="password-error hidden">Incorrect code. Access denied.</div>
+        </div>
+        
+        <!-- Monitor content (initially hidden) -->
+        <div id="monitorContent" class="hidden">
         <div class="monitor-section">
           <h3>CPU & Memory</h3>
           <div id="cpuMonitor" class="monitor-display">
@@ -151,6 +161,7 @@
           <div id="networkMonitor" class="monitor-display">
             <p>Loading network info...</p>
           </div>
+        </div>
         </div>
       </section>
     </div>
