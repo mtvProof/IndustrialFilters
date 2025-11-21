@@ -6663,7 +6663,7 @@ function calculateToolCupboardAllocate() {
 // wire inputs and buttons to autosave/calc
 ['tcWood','tcStone','tcFrags','tcHqm'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('input', () => calculateToolCupboardAllocate()); });
 const calcBtn = document.getElementById('tcCalculate'); if (calcBtn) calcBtn.addEventListener('click', calculateToolCupboardAllocate);
-const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());
+const copyAll = document.getElementById('tcCopyAll'); if (copyAll) copyAll.addEventListener('click', () => calculateToolCupboardAllocate());
 
 // ------------------ Locked page password verification ------------------
 let isLockedPageUnlocked = false;
