@@ -6402,11 +6402,24 @@ function createButtons(containerId, buttons, action) {
   });
 }
 
-createButtons('sortingPage1', sortingButtonsPage1, (btn, el) => copyToClipboard(btn.message, el));
-createButtons('sortingPage2', sortingButtonsPage2, (btn, el) => copyToClipboard(btn.message, el));
-createButtons('sortingPage3', sortingButtonsPage3, (btn, el) => copyToClipboard(btn.message, el));
-createButtons('lockerButtons', lockerButtons, (btn, el) => copyToClipboard(btn.message, el));
-createButtons('crafterButtons', crafterButtons, (btn, el) => copyToClipboard(btn.message, el));
+// Initialize buttons when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  createButtons('sortingPage1', sortingButtonsPage1, (btn, el) => copyToClipboard(btn.message, el));
+  createButtons('sortingPage2', sortingButtonsPage2, (btn, el) => copyToClipboard(btn.message, el));
+  createButtons('sortingPage3', sortingButtonsPage3, (btn, el) => copyToClipboard(btn.message, el));
+  createButtons('lockerButtons', lockerButtons, (btn, el) => copyToClipboard(btn.message, el));
+  createButtons('crafterButtons', crafterButtons, (btn, el) => copyToClipboard(btn.message, el));
+  createButtons('diagramButtons', diagramButtons, (btn) => showDiagramAndButtons(btn));
+  createButtons('electricalButtons', electricalButtons, (btn, el) => showElectricalImage(btn));
+  
+  // Artwork items
+  addArtworkItem('https://i.ibb.co/5X52mLC7/Chat-GPT-Image-Oct-24-2025-10-23-03-PM.png', 'Rig Timers image', 'Rig Timers');
+  addArtworkItem('https://i.ibb.co/1tF7DVY0/Chat-GPT-Image-Oct-23-2025-11-04-05-PM.png', 'Farm Timers image', 'Farm Timers');
+  
+  // Initialize pages
+  showSortingPage(1);
+  showPage('industrial');
+});
 
 function showDiagramAndButtons(diagram) {
   const img = document.getElementById('diagramImage');
@@ -6566,17 +6579,6 @@ function addArtworkItem(src, alt, title) {
   wrapper.appendChild(btn);
   gallery.appendChild(wrapper);
 }
-
-
-createButtons('diagramButtons', diagramButtons, (btn) => showDiagramAndButtons(btn));
-showSortingPage(1);
-// initialize new pages and content
-createButtons('electricalButtons', electricalButtons, (btn, el) => showElectricalImage(btn));
-// Artwork items provided by user
-addArtworkItem('https://i.ibb.co/5X52mLC7/Chat-GPT-Image-Oct-24-2025-10-23-03-PM.png', 'Rig Timers image', 'Rig Timers');
-addArtworkItem('https://i.ibb.co/1tF7DVY0/Chat-GPT-Image-Oct-23-2025-11-04-05-PM.png', 'Farm Timers image', 'Farm Timers');
-// default to Industrial page on load
-showPage('industrial');
 
 // ------------------ Tool Cupboard: allocation algorithm and wiring ------------------
 function calculateToolCupboardAllocate() {
