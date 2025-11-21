@@ -6697,6 +6697,9 @@ if (unlockBtn) {
       document.getElementById('monitorContent').classList.remove('hidden');
       input.value = '';
       error.classList.add('hidden');
+      // Start fetching stats after unlock
+      fetchPiStats();
+      startStatsRefresh();
     } else {
       error.classList.remove('hidden');
       input.value = '';
@@ -6713,4 +6716,75 @@ if (pwInput) {
       document.getElementById('unlockButton').click();
     }
   });
+}
+
+// ------------------ Pi Stats Monitoring ------------------
+let statsRefreshInterval = null;
+
+function fetchPiStats() {
+  fetch('data/pi-stats.json')
+    .then(response => response.json())
+    .then(data => {
+      updateStatsDisplay(data);
+    })
+    .catch(error => {
+      console.error('Error fetching stats:', error);
+      document.getElementById('cpuMonitor').innerHTML = '<p style="color: #ff4444;">Error loading stats. Make sure the Discord bot is running.</p>';
+    });
+}
+
+function updateStatsDisplay(stats) {
+  // CPU & Memory
+  const cpuMonitor = document.getElementById('cpuMonitor');
+  cpuMonitor.innerHTML = `
+    <p>CPU Usage: <span style="color: ${parseFloat(stats.cpu) > 80 ? '#ff4444' : '#00ff00'}">${stats.cpu}</span></p>
+    <p>Memory Usage: <span style="color: ${parseFloat(stats.memory) > 80 ? '#ff4444' : '#00ff00'}">${stats.memory}</span></p>
+    <p>Uptime: ${stats.uptime}</p>
+  `;
+
+  // Disk Usage
+  const diskMonitor = document.getElementById('diskMonitor');
+  diskMonitor.innerHTML = `
+    <p>Root Partition: <span style="color: ${parseFloat(stats.disk) > 80 ? '#ff4444' : '#00ff00'}">${stats.disk} used</span></p>
+  `;
+
+  // Temperature
+  const tempMonitor = document.getElementById('tempMonitor');
+  const tempValue = parseFloat(stats.temperature);
+  let tempStatus = 'Normal';
+  let tempColor = '#00ff00';
+  if (tempValue > 80) {
+    tempStatus = 'HOT!';
+    tempColor = '#ff0000';
+  } else if (tempValue > 70) {
+    tempStatus = 'Warm';
+    tempColor = '#ffa500';
+  }
+  tempMonitor.innerHTML = `
+    <p>CPU Temperature: <span style="color: ${tempColor}; font-size: 1.2em;">${stats.temperature}</span></p>
+    <p>Status: <span style="color: ${tempColor}">${tempStatus}</span></p>
+  `;
+
+  // Network
+  const networkMonitor = document.getElementById('networkMonitor');
+  networkMonitor.innerHTML = `
+    <p>IP Address: ${stats.ip}</p>
+    <p style="color: #888; font-size: 0.9em;">Last updated: ${new Date(stats.lastUpdate).toLocaleString()}</p>
+  `;
+}
+
+function startStatsRefresh() {
+  // Clear any existing interval
+  if (statsRefreshInterval) {
+    clearInterval(statsRefreshInterval);
+  }
+  // Refresh every 5 seconds
+  statsRefreshInterval = setInterval(fetchPiStats, 5000);
+}
+
+function stopStatsRefresh() {
+  if (statsRefreshInterval) {
+    clearInterval(statsRefreshInterval);
+    statsRefreshInterval = null;
+  }
 }
