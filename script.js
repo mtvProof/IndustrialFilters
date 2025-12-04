@@ -6428,9 +6428,18 @@ function showDiagramAndButtons(diagram) {
     ? diagram.fullImage
     : (diagram.fullImage ? `circuits/${diagram.fullImage}` : '');
   img.src = fullSrc;
+  img.style.display = 'block';
   img.classList.remove('hidden');
 
+  // Show the diagram display container
+  const displayEl = document.getElementById('diagramDisplay');
+  if (displayEl) {
+    displayEl.style.display = 'flex';
+    displayEl.classList.remove('hidden');
+  }
+
   const container = document.getElementById('diagramSpecialButtons');
+  container.style.display = 'flex';
   container.innerHTML = '';
   diagram.buttons.forEach(btn => {
     const button = document.createElement('button');
