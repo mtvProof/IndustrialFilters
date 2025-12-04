@@ -6385,6 +6385,10 @@ const diagramButtons = [
 
 function createButtons(containerId, buttons, action) {
   const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`Container '${containerId}' not found!`);
+    return;
+  }
   container.innerHTML = '';
   buttons.forEach(btn => {
     const button = document.createElement('button');
@@ -6422,6 +6426,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function showDiagramAndButtons(diagram) {
+  console.log('showDiagramAndButtons called with:', diagram.label);
   const img = document.getElementById('diagramImage');
   // Diagram full images (schematics) live in `circuits/` by default unless a full path is provided
   const fullSrc = (diagram.fullImage && (diagram.fullImage.startsWith('circuits/') || diagram.fullImage.startsWith('http')))
@@ -6447,6 +6452,7 @@ function showDiagramAndButtons(diagram) {
     button.onclick = () => copyToClipboard(btn.message, button);
     container.appendChild(button);
   });
+  console.log('Diagram displayed successfully');
 }
 
 // ------------------ NEW: page switching ------------------
